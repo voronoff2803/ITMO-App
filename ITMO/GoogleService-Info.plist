@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>944365398903-9angq6je3li8rvh5hng2ci3mn4g10qs3.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.944365398903-9angq6je3li8rvh5hng2ci3mn4g10qs3</string>
+	<key>API_KEY</key>
+	<string>its a secret</string>
+	<key>GCM_SENDER_ID</key>
+	<string>944365398903</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.voronoff.ITMO</string>
+	<key>PROJECT_ID</key>
+	<string>itmo-1a7ca</string>
+	<key>STORAGE_BUCKET</key>
+	<string>itmo-1a7ca.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:944365398903:ios:6f78d51f2dc78112</string>
+	<key>DATABASE_URL</key>
+	<string>https://itmo-1a7ca.firebaseio.com</string>
+</dict>
+</plist>

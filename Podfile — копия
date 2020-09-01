@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'ITMO' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'RealmSwift'
+  pod 'Eureka'
+  pod 'Firebase/Analytics'
+  pod 'FirebaseUI/Database'
+  pod 'BetterSegmentedControl'
+  pod "ViewAnimator"
+  # Pods for ITMO
+  
+end
+
+target 'ITMO Widget' do
+  use_frameworks!
+  pod 'RealmSwift'
+
+end

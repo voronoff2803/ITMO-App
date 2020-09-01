@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="KGk-i7-Jjw" customClass="ScheduleTableViewCell" customModule="ITMO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlO-C3-uKk" customClass="GradientView" customModule="ITMO" customModuleProvider="target">
+                        <rect key="frame" x="10" y="2" width="355" height="83"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBorderWidth">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientBorderFirstColor">
+                                <color key="value" red="0.23239952329999999" green="0.4884368181" blue="0.93337815999999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="gradientBorderSecondColor">
+                                <color key="value" red="0.23239952329999999" green="0.4884368181" blue="0.93337815999999996" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="endPointX">
+                                <real key="value" value="0.80000000000000004"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="startPointX">
+                                <real key="value" value="-0.10000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwW-p6-gJh" customClass="GradientView" customModule="ITMO" customModuleProvider="target">
+                        <rect key="frame" x="16" y="8" width="343" height="71"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYY-rU-QAn">
+                                <rect key="frame" x="13" y="8" width="65" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="8BZ-05-NJn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33:33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1X-zV-Qft">
+                                <rect key="frame" x="13" y="37" width="65" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="wPS-Ga-7bS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАКТ" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zhc-7o-94K">
+                                <rect key="frame" x="278" y="12" width="52" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="baZ-tz-bsN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Теория принятия решений" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLO-Vo-U45">
+                                <rect key="frame" x="86" y="11" width="192" height="19"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Ауд. 2219 ул.Ломоносова, д.9, лит. А" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPO-d0-BsD">
+                                <rect key="frame" x="87" y="42" width="246" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26704180001212224" green="0.29371654783686407" blue="0.32982689750609129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="b1X-zV-Qft" secondAttribute="bottom" constant="11" id="BDH-g2-BlT"/>
+                            <constraint firstItem="Zhc-7o-94K" firstAttribute="leading" secondItem="PLO-Vo-U45" secondAttribute="trailing" id="EfO-MQ-O1Z"/>
+                            <constraint firstAttribute="trailing" secondItem="Zhc-7o-94K" secondAttribute="trailing" constant="13" id="Olc-gl-G1t"/>
+                            <constraint firstItem="Zhc-7o-94K" firstAttribute="top" secondItem="CwW-p6-gJh" secondAttribute="top" constant="12" id="SMQ-q2-3bc"/>
+                            <constraint firstItem="XYY-rU-QAn" firstAttribute="leading" secondItem="CwW-p6-gJh" secondAttribute="leading" constant="13" id="WaE-X1-BU0"/>
+                            <constraint firstItem="PLO-Vo-U45" firstAttribute="leading" secondItem="XYY-rU-QAn" secondAttribute="trailing" constant="8" id="ZMg-W2-Y4e"/>
+                            <constraint firstItem="PLO-Vo-U45" firstAttribute="top" secondItem="CwW-p6-gJh" secondAttribute="top" constant="11" id="akJ-KP-Xzg"/>
+                            <constraint firstItem="SPO-d0-BsD" firstAttribute="top" secondItem="PLO-Vo-U45" secondAttribute="bottom" constant="12" id="cNn-xe-pf9"/>
+                            <constraint firstItem="XYY-rU-QAn" firstAttribute="top" secondItem="CwW-p6-gJh" secondAttribute="top" constant="8" id="i25-Ke-kEj"/>
+                            <constraint firstAttribute="trailing" secondItem="SPO-d0-BsD" secondAttribute="trailing" constant="10" id="pep-d0-8iU"/>
+                            <constraint firstItem="b1X-zV-Qft" firstAttribute="leading" secondItem="CwW-p6-gJh" secondAttribute="leading" constant="13" id="uxv-Re-5V5"/>
+                            <constraint firstItem="SPO-d0-BsD" firstAttribute="leading" secondItem="b1X-zV-Qft" secondAttribute="trailing" constant="9" id="vRa-U4-jzh"/>
+                            <constraint firstAttribute="bottom" secondItem="SPO-d0-BsD" secondAttribute="bottom" constant="13" id="xOV-3q-aKL"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12435787671232877" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="CwW-p6-gJh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1Kq-Wc-rMh"/>
+                    <constraint firstItem="wlO-C3-uKk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="E1t-ZG-g4g"/>
+                    <constraint firstAttribute="trailing" secondItem="wlO-C3-uKk" secondAttribute="trailing" constant="10" id="aea-lC-xZF"/>
+                    <constraint firstAttribute="bottom" secondItem="wlO-C3-uKk" secondAttribute="bottom" constant="2" id="bWF-1E-JAR"/>
+                    <constraint firstAttribute="bottom" secondItem="CwW-p6-gJh" secondAttribute="bottom" constant="8" id="fJd-mQ-3Xh"/>
+                    <constraint firstItem="wlO-C3-uKk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="iXF-FK-2db"/>
+                    <constraint firstItem="CwW-p6-gJh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="rpc-tN-ajW"/>
+                    <constraint firstAttribute="trailing" secondItem="CwW-p6-gJh" secondAttribute="trailing" constant="16" id="ywM-ot-C3b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="borderGradientView" destination="wlO-C3-uKk" id="tEv-DG-aTw"/>
+                <outlet property="endTimeLabel" destination="b1X-zV-Qft" id="bdh-rF-8g9"/>
+                <outlet property="gradientView" destination="CwW-p6-gJh" id="igG-OK-2fd"/>
+                <outlet property="placeLabel" destination="SPO-d0-BsD" id="8yk-ua-9ND"/>
+                <outlet property="startTimeLabel" destination="XYY-rU-QAn" id="XIF-t1-ncy"/>
+                <outlet property="statusLabel" destination="Zhc-7o-94K" id="5sd-UI-Js2"/>
+                <outlet property="titleLabel" destination="PLO-Vo-U45" id="96n-v1-ckZ"/>
+            </connections>
+            <point key="canvasLocation" x="213.768115942029" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+</document>

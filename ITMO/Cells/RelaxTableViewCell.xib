@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="72" id="8O0-1h-EfY" customClass="RelaxTableViewCell" customModule="ITMO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="8O0-1h-EfY" id="A6H-VP-zMc">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mii-QC-pxg" customClass="GradientView" customModule="ITMO" customModuleProvider="target">
+                        <rect key="frame" x="16" y="6" width="345" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В этот день занятий нет" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j56-4S-anS">
+                                <rect key="frame" x="20" y="0.0" width="305" height="40"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2670418" green="0.29371654780000001" blue="0.32982689749999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="j56-4S-anS" firstAttribute="top" secondItem="Mii-QC-pxg" secondAttribute="top" id="4hz-rz-z0R"/>
+                            <constraint firstAttribute="height" constant="40" id="PZU-X4-Wbm"/>
+                            <constraint firstAttribute="trailing" secondItem="j56-4S-anS" secondAttribute="trailing" constant="20" symbolic="YES" id="gSV-8Z-Enh"/>
+                            <constraint firstAttribute="bottom" secondItem="j56-4S-anS" secondAttribute="bottom" id="oqP-sC-vNM"/>
+                            <constraint firstItem="j56-4S-anS" firstAttribute="leading" secondItem="Mii-QC-pxg" secondAttribute="leading" constant="20" symbolic="YES" id="x49-Ls-pCt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.12435787669999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="gradientBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Mii-QC-pxg" firstAttribute="top" secondItem="A6H-VP-zMc" secondAttribute="top" constant="6" id="8Rd-e8-r1V"/>
+                    <constraint firstItem="Mii-QC-pxg" firstAttribute="leading" secondItem="A6H-VP-zMc" secondAttribute="leading" constant="16" id="A5k-eb-Ktv"/>
+                    <constraint firstAttribute="trailing" secondItem="Mii-QC-pxg" secondAttribute="trailing" constant="16" id="s1N-Eu-sHc"/>
+                    <constraint firstAttribute="bottom" secondItem="Mii-QC-pxg" secondAttribute="bottom" constant="10" id="uxt-if-tOY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="CpL-Lq-SE6"/>
+            <connections>
+                <outlet property="gradientView" destination="Mii-QC-pxg" id="4RX-d6-cSW"/>
+                <outlet property="titleLabel" destination="j56-4S-anS" id="iig-pF-vMP"/>
+            </connections>
+            <point key="canvasLocation" x="206.52173913043481" y="116.18303571428571"/>
+        </tableViewCell>
+    </objects>
+</document>
